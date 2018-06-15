@@ -10,10 +10,10 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-test`:
+Next, install `eslint-plugin-you-might-not-need-it`:
 
 ```
-$ npm install eslint-plugin-test --save-dev
+$ npm install eslint-plugin-you-might-not-need-it --save-dev
 ```
 
 **Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-test` globally.
@@ -24,9 +24,9 @@ Add `test` to the plugins section of your `.eslintrc` configuration file. You ca
 
 ```json
 {
-    "plugins": [
-        "test"
-    ]
+  "plugins": [
+    "you-might-not-need-it"
+  ]
 }
 ```
 
@@ -35,28 +35,20 @@ Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "test/rule-name": 2
-    }
+  "rules": {
+    "you-might-not-need-it/property-undefined": "warn",
+    "you-might-not-need-it/safely-if-check": "warn",
+  }
 }
 ```
 
-## Supported Rules
-
-* Fill in provided rules here
-
+## Supported Rules TO BE CONTINUED
 
 It has to deal with following cases:
-1. `if (a.length > 0)`
-2. `a.b` or `a.b.c.`
-3.
-```js
-const a = false
-const b = a || true // a = true, but we want b = false
-```
-4. `a.map // what if a is a object`
 
-
+1. you need to check undefined of nested object
+2. make sure it is the array type before you use the array method
+3. avoid ambiguous if statement
 
 # online AST parser
 https://astexplorer.net/
