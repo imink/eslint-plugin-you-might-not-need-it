@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-you-might-not-need-it",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a specific eslint plugin for new birds",
   "keywords": [
     "eslint",
